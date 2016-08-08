@@ -1,3 +1,3 @@
 # Half_Life_Entities
 
-(screenshot.png)
+![ScreenShot](screenshot.png)
