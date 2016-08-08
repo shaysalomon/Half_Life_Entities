@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Zombie</string>
+		<key>imageFileName</key>
+		<string>zombie</string>
+		<key>audioFileName</key>
+		<string>zombie</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Alyx Vance</string>
+		<key>imageFileName</key>
+		<string>alyx-vance</string>
+		<key>audioFileName</key>
+		<string>alyx-vance</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Barney Calhoun</string>
+		<key>imageFileName</key>
+		<string>barney-calhoun</string>
+		<key>audioFileName</key>
+		<string>barney-calhoun</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Eli Vance</string>
+		<key>imageFileName</key>
+		<string>eli-vance</string>
+		<key>audioFileName</key>
+		<string>eli-vance</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Father Grigori</string>
+		<key>imageFileName</key>
+		<string>father-grigori</string>
+		<key>audioFileName</key>
+		<string>father-grigori</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>G Man</string>
+		<key>imageFileName</key>
+		<string>g-man</string>
+		<key>audioFileName</key>
+		<string>g-man</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Isaac Kleiner</string>
+		<key>imageFileName</key>
+		<string>isaac-kleiner</string>
+		<key>audioFileName</key>
+		<string>isaac-kleiner</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Judith Mossman</string>
+		<key>imageFileName</key>
+		<string>judith-mossman</string>
+		<key>audioFileName</key>
+		<string>judith-mossman</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Wallace Breen</string>
+		<key>imageFileName</key>
+		<string>wallace-breen</string>
+		<key>audioFileName</key>
+		<string>wallace-breen</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Vortigaunt</string>
+		<key>imageFileName</key>
+		<string>vortigaunt</string>
+		<key>audioFileName</key>
+		<string>vortigaunt</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>HEV Suit</string>
+		<key>imageFileName</key>
+		<string>hev-suit</string>
+		<key>audioFileName</key>
+		<string>hev-suit</string>
+	</dict>
+</array>
+</plist>

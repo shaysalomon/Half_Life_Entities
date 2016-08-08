@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE91ED141D57414800A7F123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91ED131D57414800A7F123 /* AppDelegate.swift */; };
+		FE91ED191D57414800A7F123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE91ED171D57414800A7F123 /* Main.storyboard */; };
+		FE91ED1B1D57414800A7F123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE91ED1A1D57414800A7F123 /* Assets.xcassets */; };
+		FE91ED291D57AADB00A7F123 /* Half_Life_Entities.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE91ED281D57AADB00A7F123 /* Half_Life_Entities.plist */; };
+		FEF44BDD1D588B6F003F1DFE /* EntitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF44BDC1D588B6F003F1DFE /* EntitiesViewController.swift */; };
+		FEF44BFF1D588FC7003F1DFE /* HalfLifeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF44BFE1D588FC7003F1DFE /* HalfLifeEntity.swift */; };
+		FEF44C0C1D58BD26003F1DFE /* alyx-vance.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C011D58BD26003F1DFE /* alyx-vance.wav */; };
+		FEF44C0D1D58BD26003F1DFE /* barney-calhoun.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C021D58BD26003F1DFE /* barney-calhoun.wav */; };
+		FEF44C0E1D58BD26003F1DFE /* eli-vance.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C031D58BD26003F1DFE /* eli-vance.wav */; };
+		FEF44C0F1D58BD26003F1DFE /* father-grigori.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C041D58BD26003F1DFE /* father-grigori.wav */; };
+		FEF44C101D58BD26003F1DFE /* g-man.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C051D58BD26003F1DFE /* g-man.wav */; };
+		FEF44C111D58BD26003F1DFE /* hev-suit.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C061D58BD26003F1DFE /* hev-suit.wav */; };
+		FEF44C121D58BD26003F1DFE /* isaac-kleiner.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C071D58BD26003F1DFE /* isaac-kleiner.wav */; };
+		FEF44C131D58BD26003F1DFE /* judith-mossman.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C081D58BD26003F1DFE /* judith-mossman.wav */; };
+		FEF44C141D58BD26003F1DFE /* vortigaunt.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C091D58BD26003F1DFE /* vortigaunt.wav */; };
+		FEF44C151D58BD26003F1DFE /* wallace-breen.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C0A1D58BD26003F1DFE /* wallace-breen.wav */; };
+		FEF44C161D58BD26003F1DFE /* zombie.wav in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C0B1D58BD26003F1DFE /* zombie.wav */; };
+		FEF44C191D58CE89003F1DFE /* portal-2-teaser-trailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FEF44C181D58CE89003F1DFE /* portal-2-teaser-trailer.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE91ED101D57414800A7F123 /* HalfLifeEntities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfLifeEntities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE91ED131D57414800A7F123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE91ED181D57414800A7F123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE91ED1A1D57414800A7F123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE91ED1C1D57414800A7F123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE91ED281D57AADB00A7F123 /* Half_Life_Entities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Half_Life_Entities.plist; sourceTree = "<group>"; };
+		FEF44BDC1D588B6F003F1DFE /* EntitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesViewController.swift; sourceTree = "<group>"; };
+		FEF44BFE1D588FC7003F1DFE /* HalfLifeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfLifeEntity.swift; sourceTree = "<group>"; };
+		FEF44C011D58BD26003F1DFE /* alyx-vance.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "alyx-vance.wav"; sourceTree = "<group>"; };
+		FEF44C021D58BD26003F1DFE /* barney-calhoun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "barney-calhoun.wav"; sourceTree = "<group>"; };
+		FEF44C031D58BD26003F1DFE /* eli-vance.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "eli-vance.wav"; sourceTree = "<group>"; };
+		FEF44C041D58BD26003F1DFE /* father-grigori.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "father-grigori.wav"; sourceTree = "<group>"; };
+		FEF44C051D58BD26003F1DFE /* g-man.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "g-man.wav"; sourceTree = "<group>"; };
+		FEF44C061D58BD26003F1DFE /* hev-suit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hev-suit.wav"; sourceTree = "<group>"; };
+		FEF44C071D58BD26003F1DFE /* isaac-kleiner.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "isaac-kleiner.wav"; sourceTree = "<group>"; };
+		FEF44C081D58BD26003F1DFE /* judith-mossman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "judith-mossman.wav"; sourceTree = "<group>"; };
+		FEF44C091D58BD26003F1DFE /* vortigaunt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vortigaunt.wav; sourceTree = "<group>"; };
+		FEF44C0A1D58BD26003F1DFE /* wallace-breen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wallace-breen.wav"; sourceTree = "<group>"; };
+		FEF44C0B1D58BD26003F1DFE /* zombie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zombie.wav; sourceTree = "<group>"; };
+		FEF44C181D58CE89003F1DFE /* portal-2-teaser-trailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "portal-2-teaser-trailer.mp4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE91ED0D1D57414700A7F123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE91ED071D57414700A7F123 = {
+			isa = PBXGroup;
+			children = (
+				FE91ED121D57414800A7F123 /* HalfLifeEntities */,
+				FE91ED111D57414800A7F123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE91ED111D57414800A7F123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE91ED101D57414800A7F123 /* HalfLifeEntities.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE91ED121D57414800A7F123 /* HalfLifeEntities */ = {
+			isa = PBXGroup;
+			children = (
+				FE91ED221D577C4600A7F123 /* Classes */,
+				FE91ED261D577C4600A7F123 /* Resources */,
+				FE91ED131D57414800A7F123 /* AppDelegate.swift */,
+				FE91ED171D57414800A7F123 /* Main.storyboard */,
+				FE91ED1A1D57414800A7F123 /* Assets.xcassets */,
+				FE91ED1C1D57414800A7F123 /* Info.plist */,
+			);
+			path = HalfLifeEntities;
+			sourceTree = "<group>";
+		};
+		FE91ED221D577C4600A7F123 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE91ED231D577C4600A7F123 /* Controller */,
+				FE91ED241D577C4600A7F123 /* Model */,
+				FE91ED251D577C4600A7F123 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE91ED231D577C4600A7F123 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF44BDC1D588B6F003F1DFE /* EntitiesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE91ED241D577C4600A7F123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEF44BFE1D588FC7003F1DFE /* HalfLifeEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE91ED251D577C4600A7F123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE91ED261D577C4600A7F123 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF44C171D58CE89003F1DFE /* Video */,
+				FEF44C001D58BD26003F1DFE /* Audio */,
+				FE91ED271D577C4600A7F123 /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE91ED271D577C4600A7F123 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FE91ED281D57AADB00A7F123 /* Half_Life_Entities.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FEF44C001D58BD26003F1DFE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FEF44C011D58BD26003F1DFE /* alyx-vance.wav */,
+				FEF44C021D58BD26003F1DFE /* barney-calhoun.wav */,
+				FEF44C031D58BD26003F1DFE /* eli-vance.wav */,
+				FEF44C041D58BD26003F1DFE /* father-grigori.wav */,
+				FEF44C051D58BD26003F1DFE /* g-man.wav */,
+				FEF44C061D58BD26003F1DFE /* hev-suit.wav */,
+				FEF44C071D58BD26003F1DFE /* isaac-kleiner.wav */,
+				FEF44C081D58BD26003F1DFE /* judith-mossman.wav */,
+				FEF44C091D58BD26003F1DFE /* vortigaunt.wav */,
+				FEF44C0A1D58BD26003F1DFE /* wallace-breen.wav */,
+				FEF44C0B1D58BD26003F1DFE /* zombie.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		FEF44C171D58CE89003F1DFE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FEF44C181D58CE89003F1DFE /* portal-2-teaser-trailer.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE91ED0F1D57414700A7F123 /* HalfLifeEntities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE91ED1F1D57414800A7F123 /* Build configuration list for PBXNativeTarget "HalfLifeEntities" */;
+			buildPhases = (
+				FE91ED0C1D57414700A7F123 /* Sources */,
+				FE91ED0D1D57414700A7F123 /* Frameworks */,
+				FE91ED0E1D57414700A7F123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HalfLifeEntities;
+			productName = HalfLifeEntities;
+			productReference = FE91ED101D57414800A7F123 /* HalfLifeEntities.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE91ED081D57414700A7F123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mainqueue;
+				TargetAttributes = {
+					FE91ED0F1D57414700A7F123 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FE91ED0B1D57414700A7F123 /* Build configuration list for PBXProject "HalfLifeEntities" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE91ED071D57414700A7F123;
+			productRefGroup = FE91ED111D57414800A7F123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE91ED0F1D57414700A7F123 /* HalfLifeEntities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE91ED0E1D57414700A7F123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE91ED1B1D57414800A7F123 /* Assets.xcassets in Resources */,
+				FEF44C0E1D58BD26003F1DFE /* eli-vance.wav in Resources */,
+				FEF44C0F1D58BD26003F1DFE /* father-grigori.wav in Resources */,
+				FEF44C131D58BD26003F1DFE /* judith-mossman.wav in Resources */,
+				FE91ED291D57AADB00A7F123 /* Half_Life_Entities.plist in Resources */,
+				FEF44C141D58BD26003F1DFE /* vortigaunt.wav in Resources */,
+				FEF44C151D58BD26003F1DFE /* wallace-breen.wav in Resources */,
+				FEF44C0C1D58BD26003F1DFE /* alyx-vance.wav in Resources */,
+				FEF44C101D58BD26003F1DFE /* g-man.wav in Resources */,
+				FEF44C111D58BD26003F1DFE /* hev-suit.wav in Resources */,
+				FEF44C161D58BD26003F1DFE /* zombie.wav in Resources */,
+				FEF44C191D58CE89003F1DFE /* portal-2-teaser-trailer.mp4 in Resources */,
+				FEF44C121D58BD26003F1DFE /* isaac-kleiner.wav in Resources */,
+				FEF44C0D1D58BD26003F1DFE /* barney-calhoun.wav in Resources */,
+				FE91ED191D57414800A7F123 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE91ED0C1D57414700A7F123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF44BDD1D588B6F003F1DFE /* EntitiesViewController.swift in Sources */,
+				FE91ED141D57414800A7F123 /* AppDelegate.swift in Sources */,
+				FEF44BFF1D588FC7003F1DFE /* HalfLifeEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE91ED171D57414800A7F123 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE91ED181D57414800A7F123 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE91ED1D1D57414800A7F123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		FE91ED1E1D57414800A7F123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE91ED201D57414800A7F123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HalfLifeEntities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainqueue.HalfLifeEntities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE91ED211D57414800A7F123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HalfLifeEntities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainqueue.HalfLifeEntities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE91ED0B1D57414700A7F123 /* Build configuration list for PBXProject "HalfLifeEntities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE91ED1D1D57414800A7F123 /* Debug */,
+				FE91ED1E1D57414800A7F123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE91ED1F1D57414800A7F123 /* Build configuration list for PBXNativeTarget "HalfLifeEntities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE91ED201D57414800A7F123 /* Debug */,
+				FE91ED211D57414800A7F123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE91ED081D57414700A7F123 /* Project object */;
+}
