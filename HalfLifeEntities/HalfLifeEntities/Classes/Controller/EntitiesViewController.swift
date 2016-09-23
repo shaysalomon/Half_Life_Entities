@@ -34,7 +34,7 @@ class EntitiesViewController: UIViewController {
     
     // The model of this controller.
     // Array of HalfLifeEntity.
-    private var entities = [HalfLifeEntity]()
+    fileprivate var entities = [HalfLifeEntity]()
     
     
     
@@ -46,7 +46,7 @@ class EntitiesViewController: UIViewController {
     //----------------------------------------------------------------------
     
     // For playing the entities audio lines.
-    private var audioPlayer: AVAudioPlayer!
+    fileprivate var audioPlayer: AVAudioPlayer!
     
 
     
@@ -65,7 +65,7 @@ class EntitiesViewController: UIViewController {
         
         // Add recognizer for play/pause button
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(playVideo))
-        tapRecognizer.allowedPressTypes = [NSNumber(integer: UIPressType.PlayPause.rawValue)]
+        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.playPause.rawValue as Int)]
         self.view.addGestureRecognizer(tapRecognizer)
         
         // Load the data for this controller
@@ -87,12 +87,12 @@ class EntitiesViewController: UIViewController {
     //----------------------------------------------------------------------
     
     // Play audio action
-    @IBAction func actionPlayAudio(sender: UIButton) {
+    @IBAction func actionPlayAudio(_ sender: UIButton) {
         
         // If there is a selected entity, play audio.
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             
-            let entity = entities[selectedIndexPath.row]
+            let entity = entities[(selectedIndexPath as NSIndexPath).row]
             
             playAudio(forEntity: entity)
         }
@@ -112,10 +112,10 @@ extension EntitiesViewController {
     
     
     // Load the half life entities data from the plist in the bundle.
-    private func loadEntities() {
+    fileprivate func loadEntities() {
         
         // Load data from plist to array
-        guard let path = NSBundle.mainBundle().pathForResource("Half_Life_Entities", ofType: "plist"),
+        guard let path = Bundle.main.path(forResource: "Half_Life_Entities", ofType: "plist"),
             let dataArray = NSArray(contentsOfFile: path) else {
             
             return
@@ -129,7 +129,7 @@ extension EntitiesViewController {
         }
         
         // Sort the array by "title"
-        entities.sortInPlace {
+        entities.sort {
             
              $0.title < $1.title
         }
@@ -137,7 +137,7 @@ extension EntitiesViewController {
     
     
     // Update the UI with an Half Life Entity
-    private func update(withEntity entity: HalfLifeEntity) {
+    fileprivate func update(withEntity entity: HalfLifeEntity) {
         
         // Update the image view
         imageView.image = UIImage(named: entity.imageFileName)!
@@ -145,13 +145,13 @@ extension EntitiesViewController {
     
     
     // Play the audio for an Entity
-    private func playAudio(forEntity entity: HalfLifeEntity) {
+    fileprivate func playAudio(forEntity entity: HalfLifeEntity) {
         
-        let audioPath:NSURL = NSBundle.mainBundle().URLForResource(entity.audioFileName, withExtension: "wav")!
+        let audioPath:URL = Bundle.main.url(forResource: entity.audioFileName, withExtension: "wav")!
         
         do {
             
-            audioPlayer = try AVAudioPlayer(contentsOfURL: audioPath, fileTypeHint: nil)
+            audioPlayer = try AVAudioPlayer(contentsOf: audioPath, fileTypeHint: nil)
             audioPlayer.play()
             
         } catch {
@@ -164,17 +164,17 @@ extension EntitiesViewController {
     func playVideo() {
         
         // Path of video
-        let localPath = NSBundle.mainBundle().pathForResource("portal-2-teaser-trailer", ofType: "mp4")
+        let localPath = Bundle.main.path(forResource: "portal-2-teaser-trailer", ofType: "mp4")
         
-        let videoAddress:NSURL = NSURL.fileURLWithPath(localPath!)
+        let videoAddress:URL = URL(fileURLWithPath: localPath!)
         
-        let player = AVPlayer(URL:videoAddress)
+        let player = AVPlayer(url:videoAddress)
         
         let playerViewController = AVPlayerViewController()
         
         playerViewController.player = player
         
-        presentViewController(playerViewController, animated: true) {
+        present(playerViewController, animated: true) {
             playerViewController.player!.play()
         }
     }
@@ -200,17 +200,17 @@ extension EntitiesViewController {
 extension EntitiesViewController: UITableViewDataSource {
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return entities.count
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("EntitiesCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EntitiesCell", for: indexPath)
         
-        let halfLifeEntity = entities[indexPath.row]
+        let halfLifeEntity = entities[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = halfLifeEntity.title
         
         return cell
@@ -230,16 +230,16 @@ extension EntitiesViewController: UITableViewDataSource {
 extension EntitiesViewController: UITableViewDelegate {
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         setNeedsFocusUpdate()
     }
     
     
-    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         // Check if a cell is focused / highlighted, because this method is called also when other views are focused.
-        guard let highlightedRow = context.nextFocusedIndexPath?.row  else {
+        guard let highlightedRow = (context.nextFocusedIndexPath as NSIndexPath?)?.row  else {
             
             return
         }
@@ -249,7 +249,7 @@ extension EntitiesViewController: UITableViewDelegate {
         
         if let row = tableView.indexPathForSelectedRow {
             
-            tableView.deselectRowAtIndexPath(row, animated: false)
+            tableView.deselectRow(at: row, animated: false)
         }
     }
     

@@ -21,8 +21,8 @@ struct HalfLifeEntity {
     init?(json: [String: AnyObject]) {
         
         guard let title = json["title"] as? String,
-            imageFileName = json["imageFileName"] as? String,
-            audioFileName = json["audioFileName"] as? String else {
+            let imageFileName = json["imageFileName"] as? String,
+            let audioFileName = json["audioFileName"] as? String else {
                 
                 return nil
         }
